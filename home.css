@@ -33,11 +33,15 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.header_items a {
   color: white;
   margin: 10px;
 }
 a:hover {
-  color: orange;
+  color: orangered;
 }
 /* ------------Home-------------*/
 
@@ -79,7 +83,8 @@ h1 {
 
 h2 {
   font-size: xx-large;
-  padding-left: 40%;
+
+  text-align: center;
 }
 
 .section_card {
@@ -147,15 +152,30 @@ h2 {
   .inner-container {
     padding: 80px;
   }
-}
+  .box {
+    margin: 50px;
 
-@media screen and (max-width: 1000px) {
-  .section_card {
-    background-size: 100%;
-    padding-left: 200px;
+    .cornice {
+      height: max-content;
+    }
   }
-  .inner-container {
-    width: 100%;
+  @media screen and (max-width: 1000px) {
+    .section_card {
+      background-size: 100%;
+      padding-left: 200px;
+    }
+    .inner-container {
+      width: 100%;
+    }
+    .box_conteiner {
+      padding: 60px;
+    }
+    .box {
+      margin: 50px;
+    }
+    .cornice {
+      height: max-content;
+    }
   }
 }
 
@@ -198,6 +218,28 @@ h2 {
   color: white;
 }
 
+.cornice {
+  background-color: rgb(185, 185, 185);
+  margin: 80px;
+  margin-top: 40px;
+  display: flex;
+}
+.cornice_text {
+  margin: 40px;
+}
+.anno {
+  font-size: 40px;
+}
+.text {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.text2 {
+  font-size: 15px;
+  margin-left: 60px;
+}
+
 /* ------------Footer-------------*/
 .footer {
   width: 100%;
@@ -232,6 +274,13 @@ colonna ul {
   width: 25%;
 
   color: white;
+}
+.colonna a {
+  color: white;
+  margin: 10px;
+}
+.colonna a:hover {
+  color: orangered;
 }
 
 /*responsive*/
