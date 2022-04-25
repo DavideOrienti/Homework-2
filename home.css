@@ -35,6 +35,9 @@ a {
   text-decoration: none;
   color: black;
 }
+.home_text a {
+  padding-left: 10px;
+}
 
 .header_items a {
   color: white;
@@ -106,9 +109,11 @@ h2 {
 
 .section_card a {
   color: black;
+  font-style: oblique;
 }
 .section_card2 a {
   color: black;
+  font-style: oblique;
 }
 .section_card a:hover {
   color: orange;
@@ -154,11 +159,12 @@ h2 {
   }
   .box {
     margin: 50px;
-
-    .cornice {
-      height: max-content;
-    }
   }
+
+  .cornice {
+    height: max-content;
+  }
+
   @media screen and (max-width: 1000px) {
     .section_card {
       background-size: 100%;
@@ -166,6 +172,15 @@ h2 {
     }
     .inner-container {
       width: 100%;
+    }
+
+    .section_card2 {
+      background-size: 100%;
+      padding-right: 200px;
+    }
+    .inner-container2 {
+      width: 100%;
+      padding-left: 20px;
     }
     .box_conteiner {
       padding: 60px;
@@ -185,6 +200,13 @@ h2 {
     padding-left: 200px;
   }
   .inner-container {
+    padding: 60px;
+  }
+  .section_card2 {
+    padding: 0;
+    padding-right: 200px;
+  }
+  .inner-container2 {
     padding: 60px;
   }
 }
@@ -238,6 +260,9 @@ h2 {
 .text2 {
   font-size: 15px;
   margin-left: 60px;
+}
+.text3 {
+  padding-top: 3%;
 }
 
 /* ------------Footer-------------*/
